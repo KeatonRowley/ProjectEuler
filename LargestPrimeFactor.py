@@ -1,3 +1,7 @@
+#   Solution to Project Euler problem 3
+#   Copyright (c) Project Keaton Rowley. All rights reserved.
+#   https://github.com/KeatonRowley/ProjectEuler
+
 def isPrime(number):
     for val in range(2, number):
         if(number % val == 0):
