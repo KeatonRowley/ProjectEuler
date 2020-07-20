@@ -1,0 +1,39 @@
+-wave, csv, arff, HTK, binary float matrix (binary feature data)
+-gnuplot features can be visualized
+
+-contact info@audeering.com for commercial development license
+
+-first version was openEAR
+
+File formats can read from 
+
+RIFF-WAVE (PCM)
+CSV
+HTK
+WEKA ARFF
+Video streams via openCV
+
+Live recording audio any PC sound card supported via port audio library
+
+white
+
+Main features:
+
+ Frame Energy • Frame Intensity / Loudness (approximation) • Critical Band spectra (Mel/Bark/Octave, triangular masking ﬁlters) • Mel-/Bark-Frequency-Cepstral Coeﬃcients (MFCC) • Auditory Spectra • Loudness approximated from auditory spectra. • Perceptual Linear Predictive (PLP) Coeﬃcients • Perceptual Linear Predictive Cepstral Coeﬃcients (PLP-CC) • Linear Predictive Coeﬃcients (LPC) • Line Spectral Pairs (LSP, aka. LSF) • Fundamental Frequency (via ACF/Cepstrum method and via Subharmonic-Summation (SHS))
+• Probability of Voicing from ACF and SHS spectrum peak • Voice-Quality: Jitter and Shimmer • Formant frequencies and bandwidths • Zero- and Mean-Crossing rate • Spectral features (arbitrary band energies, roll-oﬀ points, centroid, entropy, maxpos, minpos, variance (=spread), skewness, kurtosis, slope)
+• Psychoacoustic sharpness, spectral harmonicity • CHROMA (octave warped semitone spectra) and CENS features (energy normalised and smoothed CHROMA)
+• CHROMA-derived Features for Chord and Key recognition
+
+Chroma = computes musical chroma features (for 12 semi-tines)
+
+MFCC = for speach recognition
+MFCC12 = extracts Mel-frequency cepstral coefficients 
+
+PLP = plp cepstral coefficients
+
+Prosodic features = extract fundemental frequency, voicing probability, loudness countours 
+
+emobase = old baseline set 988 acoustic features for emotion recognition
+emo_large = larger feature set more functionals & more LLD
+emobase2010 = based INTER-SPEECH 2010 paralinguistic challenge feature set
+	582 features. 34 low-level descriptors, 34 corresponding delta coefficients, 21 functionals, 4 pitch-based LLD, four delta coefficient contours, pitch onsets

@@ -17,7 +17,7 @@ def largest_product_in_series(series):
             max = product
     return max
 
-#Read in summation string. 
+#Read in grid string. 
 str = """73167176531330624919225119674426574742355349194934
 96983520312774506326239578318016984801869478851843
 85861560789112949495459501737958331952853208805511
@@ -41,5 +41,7 @@ str = """73167176531330624919225119674426574742355349194934
 
 #Remove \n and \r characters
 str.replace('\n', '').replace('\r', '')
+
+grid = numpy.zeros((20,20), dtype=int32)
 
 print(largest_product_in_series(str))
