@@ -7,12 +7,11 @@
 def largest_product_in_series(series):
     max = 1
     
-    for i in range(len(series) -13):
+    for i in range(len(series) - 13):
         product = 1
         for val in range(i, i+13):
             product *= int(series[val])
-        
-        print(product)
+     
         if product > max:
             max = product
     return max
@@ -40,8 +39,7 @@ str = """73167176531330624919225119674426574742355349194934
 71636269561882670428252483600823257530420752963450"""
 
 #Remove \n and \r characters
-str.replace('\n', '').replace('\r', '')
+str = str.replace('\n', '').replace('\r', '')
 
-grid = numpy.zeros((20,20), dtype=int32)
 
 print(largest_product_in_series(str))

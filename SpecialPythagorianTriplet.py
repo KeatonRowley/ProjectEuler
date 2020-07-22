@@ -1,7 +1,11 @@
+#   Solution to Project Euler problem 9
+#   Copyright (c) Project Keaton Rowley. All rights reserved.
+#   https://github.com/KeatonRowley/ProjectEuler
+
 #calculates the largest specialPythagorianTriplet
 #which equals num
 
-def specialPythagorainTriplet(num):
+def special_pythagorean_triplet(num):
     nums = -1
     
     for a in range(1,num):
@@ -11,4 +15,4 @@ def specialPythagorainTriplet(num):
 
     return int(nums)
 
-print(specialPythagorainTriplet(300))
+print(special_pythagorean_triplet(1000))

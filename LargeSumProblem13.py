@@ -1,5 +1,7 @@
-# Keaton Rowley 6-29-2020
-# Large sum problem 13
+#   Solution to Project Euler problem 13
+#   Copyright (c) Project Keaton Rowley. All rights reserved.
+#   https://github.com/KeatonRowley/ProjectEuler
+
 # Work out the first ten digits of the sum of the following one-hundred 50-digit numbers.
 
 f = open("LargestSumProblem13InputText.txt")

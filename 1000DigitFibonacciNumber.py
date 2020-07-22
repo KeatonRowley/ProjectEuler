@@ -1,3 +1,7 @@
+#   Solution to Project Euler problem 25
+#   Copyright (c) Project Keaton Rowley. All rights reserved.
+#   https://github.com/KeatonRowley/ProjectEuler
+
 def digit_count(input):
     return len(str(input)) < 1000
 

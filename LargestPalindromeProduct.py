@@ -1,13 +1,13 @@
-#determins if a number is a palindrome
-def is_palindrome(num):
-    numStr = str(num)
-    numStrLen = len(numStr)
-    for index in range(numStrLen):
-        if(numStr[index] != numStr[numStrLen - index -1] ):
-            return False
-    return True
+#   Solution to Project Euler problem 4
+#   Copyright (c) Project Keaton Rowley. All rights reserved.
+#   https://github.com/KeatonRowley/ProjectEuler
 
-#calculates largest palindrome of product of 3 digit numbers
+# determines if a number is a palindrome
+def is_palindrome(num):
+    num_str = str(num)
+    return num_str == num_str[::-1]
+
+# calculates largest palindrome of product of 3 digit numbers
 def largest_palindrome_three_digit():
     largest_palindrome = 0
     for i in range(999):

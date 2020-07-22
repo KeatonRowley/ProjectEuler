@@ -2,30 +2,22 @@
 #   Copyright (c) Project Keaton Rowley. All rights reserved.
 #   https://github.com/KeatonRowley/ProjectEuler
 
-def newPrime(start, num):
-    for val in range(start, int(num**0.5)):
-        if(num % val == 0):
-            return False
-    return True
 
-def sumValues(array):
-    sum =0
-    for item in array:
-        sum += item
-    return sum
+# Given a value n, calculates the sum of all
+# prime numbers less than that value and returns it.
+def summation_of_primes(n):
+    prime_list = [True for x in range(n+1)]
 
-def summationOfPrimes():
-    primes = [2]
-    for val in range(3,2000000,2):
-        isPrime = True
-        for prime in primes:
-            if val % prime == 0:
-                isPrime = False
-                break
-        #If not already divisible by current primes, check
-        #to see if it is a new prime starting at last known prime all the way to 
-        #number.
-        if isPrime == True and newPrime(primes[len(primes)-1], val):
-            primes.append(val) 
-    return sum(primes)
-print(summationOfPrimes())
+    curr = 2
+    while(curr**2 <= n):
+        if prime_list[curr]:
+            for i in range(curr, n+1, curr):
+                prime_list[i] = False
+        curr += 1
+
+
+    total = sum([i for i, val in enumerate(prime_list) if val])
+    return total
+
+print(summation_of_primes(2000000))
+

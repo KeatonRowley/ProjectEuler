@@ -2,6 +2,7 @@
 #   Copyright (c) Project Keaton Rowley. All rights reserved.
 #   https://github.com/KeatonRowley/ProjectEuler
 
+# checks if a number is prime.
 def isPrime(number):
     for val in range(2, number):
         if(number % val == 0):
@@ -19,13 +20,15 @@ def getFactors(number):
                 break
             factors.append(val)
             factors.append(int(number / val))
-    #get factors in correct order
+
+    # get factors in correct order
     factors.sort() 
     return factors
 
 #Gets largest prime factor of an input number
 def largest_prime_factor(input):
     factors = getFactors(input)
+    # check primality greatest to least.
     for val in reversed(factors):
         if(isPrime(val)):
             return val
